@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">;
+
     <link rel="stylesheet" href="style.css">
     <title>AluraBooks</title>
 </head>
@@ -50,5 +52,115 @@
         <p class="banner__texto">Encontre em nossa estante o que você precisa para o seu desenvolvimento</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+<section class="carrossel">
+    <h2 class="carrossel_titulo">Novos Lançamentos</h2>
+
+    <div class="swiper">
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
+    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"><div>
+     </div>
+
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+
+    </div>
+
+</section>
+
+<!--Segundo link do carrossel-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+        el: 'swiper-pagination',
+        type: 'bullets', 
+        },
+    });
+    </script>
+
+    <div class= "card">
+    </div class="card_descrição">
+    <div class="descrição">
+        <h3 class="descrição_titulo"> Talvez você também se interesse por...</h3>
+        <h2 class= "descrição_titulo-livro">Angular 11 e Firebase</h2>
+        <p class= "descrição_texto"> Construindo uma aplicação integrada com a plataforma Google.</p>
+    </div>
+    <img src="img/Angular.svg" class="descrição_imagem">
+    </div>
+
+    <div class="card_botões">
+      <ul class="botões">
+          <li class="botões_item"> <img src="img/Favoritos.svg" alt="Favoritar"></li>
+          <li class="botões_item"> <img src="img/Compras.svg" alt= "Adicionar ao carrinho de compras"></li>
+      </ul>
+      <a href="#" class="botões_ancora">Saiba mais</a>
+    </div>
+  </div>
+  <section class="carrossel">
+    <h2 class="carrossel_titulo">Novos Lançamentos</h2>
+
+    <div class="swiper">
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
+    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"><div>
+     </div>
+
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+
+    </div>
+
+</section>
+
+<!--Segundo link do carrossel-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper1= new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+        el: 'swiper-pagination',
+        type: 'bullets', 
+        },
+    });
+    </script>
+
+    <div class= "card">
+    </div class="card_descrição">
+    <div class="descrição">
+        <h3 class="descrição_titulo"> Talvez você também se interesse por...</h3>
+        <h2 class= "descrição_titulo-livro">Angular 11 e Firebase</h2>
+        <p class= "descrição_texto"> Construindo uma aplicação integrada com a plataforma Google.</p>
+    </div>
+    <img src="img/Angular.svg" class="descrição_imagem">
+    </div>
+
+    <div class="card_botões">
+      <ul class="botões">
+          <li class="botões_item"> <img src="img/Favoritos.svg" alt="Favoritar"></li>
+          <li class="botões_item"> <img src="img/Compras.svg" alt= "Adicionar ao carrinho de compras"></li>
+      </ul>
+      <a href="#" class="botões_ancora">Saiba mais</a>
+    </div>
+  </div>
+
 </body>
 </html>
